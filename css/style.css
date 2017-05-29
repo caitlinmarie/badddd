@@ -155,6 +155,16 @@ h4.subHeading{
 .wrapper {
 	background-color: #c9dedb;
 }
+.breaker {
+	 max-width: 100px;
+	 margin: 0 auto;
+}
+.divider {
+	width: 100%;
+	height: 6px;
+	background-image: url("../images/line-bg.png");
+	margin: 0 auto;
+}
 
 /*----------------------------------------------------
  3.	Header Part
@@ -162,6 +172,18 @@ h4.subHeading{
 .top-bar {
 	height: 130px;
 	width: 100%;
+}
+.headroom {
+	will-change: transform;
+	transition: transform 200ms linear;
+}
+.headroom--pinned {
+	transform: translateY(0%);
+	position: fixed;
+}
+.headroom--unpinned {
+	transform: translateY(-100%);
+	position: relative;
 }
 .bar-container {
 	max-width: 800px;
@@ -554,11 +576,11 @@ nav ul li a:hover, .active-link {
 ------------------------------------------------------*/
 .addspace{
 	height:60px;
-	background:#eeeeee;
+	background:#fff;
 }
 
 .technical{
-	background:#eeeeee;
+	background: #fff;
 	color:#474d5d;
 }
 .technical .container{
@@ -573,7 +595,9 @@ nav ul li a:hover, .active-link {
 	color:#474d5d;
 }
 .technical h2{
-	color:#ff675f;
+	color: #005055;
+	font-size: 3.8em;
+	font-weight: 400;
 }
 
 .technical .skillsArea{
@@ -657,7 +681,7 @@ nav ul li a:hover, .active-link {
 }
 
 .exprience h2{
-	color:#ff675f;
+	color:#379ea2;
 }
 .exprience p{
 	color:#84868d;
@@ -682,7 +706,7 @@ nav ul li a:hover, .active-link {
 .workYear{
 	font-size:17px;
 	color:#fff;
-	background:#ff675f;
+	background:#379ea2;
 	text-align:center;
 	width:120px;
 	height:120px;
@@ -734,7 +758,7 @@ nav ul li a:hover, .active-link {
 }
 
 .education h2{
-	color:#ff675f;
+	color:#379ea2;
 }
 .education p{
 	color:#84868d;
@@ -901,7 +925,7 @@ span.hoverBox .zoom{
 	visibility:hidden;
 	width:42px;
 	height:42px;
-	background:#ff675f;
+	background:#379ea2;
 	color:#fff;
 	position: relative;
 	left:-150%;
@@ -1030,7 +1054,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .contact h2{
-	color:#ff675f;
+	color:#379ea2;
 }
 .contact p{
 	color:#84868d;
@@ -1122,7 +1146,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 .conForm .submitBnt{
-	background:#ff675f;
+	background:#379ea2;
 	font-family: 'Open Sans', sans-serif;
 	color:#fff;
 	font-size:16px;
@@ -1146,7 +1170,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	font-weight: 500;
 }
 .error_message{
-	color: #ff675f;
+	color: #379ea2;
 	padding-bottom: 15px;
 	font-weight: 500;
 }

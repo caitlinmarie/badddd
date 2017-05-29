@@ -27,7 +27,7 @@
 <div class="wrapper" id="wrapper">
     <!--banner start-->
     <div class="intro-section">
-    <div class="top-bar">
+    <div class="top-bar headroom" id="top-bar">
       <div class="bar-container">
         <img src="images/avatar.png" alt="" id="avatar" >
         <nav>
@@ -106,7 +106,22 @@
       </div>
   </section>
   <!--about me end-->
+  <!--technical start-->
+  <section class="technical" id="technical">
+  
+    <div class="breaker">
+        <div class="col-md-12">
+          <div class="divider"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+      <div class="heading">
+        <h2>What I can do.</h2>
+      </div>
+      
 
+</div>
 <!--wrapper end-->
 <!--modernizr js-->
 <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
@@ -173,5 +188,31 @@ $( ".navbar-toggle" ).click(function() {
 <script src="js/jquery.easypiechart.js"></script>
 <!--contact form js-->
 <script type="text/javascript" src="js/jquery.contact.js"></script>
+<!-- Hide Header -->
+<script type="text/javascript" src="js/headroom.js"></script>
+<script type="text/javascript">
+ /* var lastScrollTop = 0;
+  $(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+      $('#top-bar').hide();
+    } else {
+      $('#top-bar').show();
+      $("#top-bar").addClass("top-bar-fix");
+    }
+    lastScrollTop = st;
+  });*/
+  var myElement = document.querySelector("#top-bar");
+  var headroom = new Headroom(myElement, {
+    "offset": 205,
+    "tolerance": 5,
+    "classes": {
+      "initial": "animated",
+      "pinned": "slideDown",
+      "unpinned": "slideUp"
+    }
+  });
+  headroom.init(); 
+  </script>
 </body>
 </html>
