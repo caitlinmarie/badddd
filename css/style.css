@@ -87,8 +87,9 @@ a {
 
 p{
 	font-family: 'EB Garamond', serif;
-	font-size:20px;
-	line-height:25px;
+	font-size:19px;
+	line-height:30px;
+	letter-spacing: 1px;
 	font-weight:400;
 	padding-bottom:22px;
 	margin:0px;
@@ -104,11 +105,12 @@ h1{
 }
 h2{
 	font-family: 'Brandon Grotesque', sans-serif;
-	font-size:36px;
+	font-size:30px;
 	line-height:38px;
 	padding-bottom:0px;
-	font-weight:300;
+	font-weight: bold;
 	margin:0px;
+	color: #379ea2;
 }
 h3{
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -143,7 +145,7 @@ h4.subHeading{
 
 .heading{
 	text-align:center;
-	padding-bottom:45px;
+	padding-bottom:20px;
 }
 
 .topmar{
@@ -278,6 +280,7 @@ nav ul li a:hover, .active-link {
 	margin-top: 80px;
 	margin-right: -80px;
 	margin-bottom: 0px !important;
+	transition: all 1s ease-in-out;
 }
 
 /*---------------------------------------------------------------------------------
@@ -491,29 +494,6 @@ nav ul li a:hover, .active-link {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 600px;
-  background-color: #0A64A4;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-}
-
 
 
 
@@ -525,15 +505,22 @@ nav ul li a:hover, .active-link {
 .aboutme{
 	background:#fff;
 	position:relative;
+	text-align: center;
 }
 .aboutme .container{
 	padding-top:85px ;
 	padding-bottom:93px ;
 }
+.about-paragraph {
+	max-width: 440px;
+	text-align: center;
+	margin: auto;
+}
 #caitlin-pic {
 	background-color: #c9dfdc;
-	width: 100%;
+	width: 150px;
 	height: auto;
+	margin-bottom: 30px;
 }
 
 .aboutTop{
@@ -549,6 +536,7 @@ nav ul li a:hover, .active-link {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
 	background: #c9dfdc;
+	margin-top: 15px;
 	padding:16px 22px;
 	display:inline-block;
 	color: #379ea2;
@@ -1221,18 +1209,53 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
  13. Responsive style
 -------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
+	.intro-img {
+		width: 290px;
+		margin-top: 110px;
+	}
+	#bear-img {
+		margin-left: -600px;
+	}
+	#book-img {
+		margin-left: 350px;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
 	.workYear{
 		width:140px;
 		height:140px;
 		padding-top:50px;
 	}
-	
+
 	.education .workYear{
 		padding-top:58px;
 	}
+	.intro-img {
+		width: 270px;
+		margin-top: 110px;
+	}
+	#bear-img {
+		margin-left: -540px;
+	}
+	#book-img {
+		margin-left: 290px;
+	}
 }
 
+
+@media screen and (min-width: 1050px) and (max-width: 1199px) {
+	.intro-img {
+		width: 250px;
+		margin-top: 110px;
+	}
+	#bear-img {
+		margin-left: -470px;
+	}
+	#book-img {
+		margin-left: 260px;
+	}
+}
 
 @media screen and (max-width: 991px) {
 	.navbar.navbar-inverse.navbar-static-top a{
@@ -1244,13 +1267,13 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		padding-left:25px;
 		padding-right:25px;
 	}
-	.bannerText h1{
+/*	.bannerText h1{
 		font-size:65px;
 		line-height:71px;
 	}
 	.bannerText h2{
 		font-size:28px;
-	}
+	}*/
 	.proPic{
 		text-align:center;
 	}
