@@ -1,13 +1,6 @@
 /* ------------------------------------------------------------------------------
 
-	Template Name: Coming soon
-	Template URI: http://http://www.themeelite.com/comingsoon
-	Description: Full Screen Coming Soon Template
-	Author: Andy
-	Author URI: http://www.themeelite.com
-	License: GNU General Public License version 3.0
-	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Version: 1.0
+Caitlinnnnn 
 	
 	1. CSS Reset + fonts
 	2. Document Setup
@@ -1283,10 +1276,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 @media screen and (max-width: 551px) {
 	.intro-img {
 		width: 150px;
-		margin-top: 100px;
+		margin-top: 140px;
 	}
 	#bear-img {
-		margin-left: -200px;
+		margin-left: -210px;
 	}
 	#book-img {
 		margin-left: 70px;
@@ -1301,7 +1294,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 	.intro-img {
 		width: 150px;
-		margin-top: 100px;
+		margin-top: 130px;
 	}
 	#bear-img {
 		margin-left: -210px;
@@ -1361,7 +1354,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 	.intro-img {
 		width: 130px;
-		margin-top: 110px;
+		margin-top: 145px;
 	}
 	#bear-img {
 		margin-left: -160px;
@@ -1377,7 +1370,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 @media screen and (max-width: 370px) {
 	.intro-img {
 		width: 100px;
-		margin-top: 110px;
+		margin-top: 150px;
 	}
 	#bear-img {
 		margin-left: -120px;
