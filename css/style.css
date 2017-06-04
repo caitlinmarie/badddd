@@ -600,13 +600,14 @@ nav ul li a:hover, .active-link {
 	text-align: center;
 }
 .btn-hldr .main-btn {
+	margin: 0 auto !important;
 	font-size: .8em;
 	text-align: center;
-	max-width: 250px;
+	max-width: 200px;
 	display: block;
 	position: relative;
 	background: #e0ebe8;
-	padding: .75em 2em .75em 3.5em;
+	padding: .75em 2em;
 	color: #005055;
 	text-decoration: none;
 	margin: 1.5em 0 0;
@@ -619,6 +620,10 @@ nav ul li a:hover, .active-link {
 	text-transform: uppercase;
 }
 
+.main-btn i {
+	margin-right: 10px;
+}
+
 .btn-hldr .main-btn i.email {
 	position: absolute;
 	height: 15px;
@@ -627,257 +632,14 @@ nav ul li a:hover, .active-link {
 	top: 33%;
 	background-image: url(../img/content/home/contact/mail.png);
 }
+
+.main-btn:hover {
+	background-color: #005055;
+	color: #e0ebe8;
+}
 /*----------------------------------------------------
  10. Protfolio Style
 ------------------------------------------------------*/
-.protfolio{
-	background:#2bb3dd;
-}
-.protfolio .container{
-	padding-top:85px ;
-	padding-bottom:90px ;
-}
-
-.protfolio .heading p{
-	padding-bottom:41px;
-}
-
-.protfolio h4{
-	font-weight:700;
-}
-
-
-.portfolioFilter{
-	display:block;
-	margin:0 auto;
-	text-align: center;
-}
-
-.portfolioFilter ul{
-	margin:0 auto;
-	text-align:center;
-	display:block;
-	margin-bottom:30px;
-}
-.portfolioFilter ul li{
-	display:inline-block;
-	margin:5px 5px;
-}
-.portfolioFilter ul li a{
-	padding:16px 18px;
-	font-size:13px;
-	line-height:15px;
-	color:#ffffff;
-	text-transform:uppercase;
-	display:block;
-	text-decoration:none;
-	border:solid 1px #95d9ee;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-
-.portfolioFilter ul li a:hover{
-	border:solid 1px #15596e;
-	color:#15596e;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-
-.portfolioFilter ul li a.current{
-	background:#15596e;
-	border:solid 1px #15596e;
-	color:#fff;
-}
-
-
-
-ul.portfolioContainer{
-	display:block;
-	padding:0px;
-	list-style-type:none;
-}
-ul.portfolioContainer li{
-	display:block;
-	min-height:205px;
-	padding:0px;
-	margin:0px;
-	cursor:pointer;
-}
-ul.portfolioContainer li .lightCon{
-	display:block;
-	margin:3px 3px 4px 4px;
-	position:relative;
-	overflow:hidden;
-}
-ul.portfolioContainer li img{
-	 width:100%;
-	 height:auto;
-	 display:block;
-}
-
-span.hoverBox{
-	visibility:hidden;
-	width:100%;
-	height:100%;
-	position: absolute;
-	left:0px;
-	bottom: 0px;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-	
-	background: rgba(0, 0, 0, 0.1);
-	
-}
-ul.portfolioContainer li:hover span.hoverBox{
-	visibility:visible;
-	left:0px;
-	bottom: 0px;
-	
-	background: rgba(0, 0, 0, 0.8);
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-
-span.hoverBox a{
-	line-height:42px;
-}
-
-span.hoverBox .smallIcon{
-	/*width:92px;
-	margin:0px auto;*/
-	
-	width: 94px;
-	margin: 0px auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -47px;
-	margin-top: -21px;
-}
-
-span.hoverBox .zoom{
-	visibility:hidden;
-	width:42px;
-	height:42px;
-	background:#379ea2;
-	color:#fff;
-	position: relative;
-	left:-150%;
-	/*top:40%;*/
-	text-align:center;
-	line-height:50px;
-	display: block;
-	float: left;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-ul.portfolioContainer li:hover span.hoverBox .zoom{
-	visibility:visible;
-	left:0;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-
-span.hoverBox .linKed{
-	visibility:hidden;
-	width:42px;
-	height:42px;
-	background:#313131;
-	color:#fff;
-	position: relative;
-	right:-150%;
-	/*top:40%;*/
-	text-align:center;
-	line-height:52px;
-	display: block;
-	float: right;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-ul.portfolioContainer li:hover span.hoverBox .linKed{
-	visibility:visible;
-	right:0%;
-	
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-}
-
-
-.isotope-item {
-    z-index: 2;
-}
-.isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
-}
-.isotope,
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-.isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
-}
-.isotope .isotope-item {
-	padding:0;
-	
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
-}
-
-
-
-
-.abc{
-	position: absolute;
-	width: 782px;
-	height: auto;
-	top: 20%;
-	left: 0;
-	right: 0;
-	z-index: 99999;
-	margin: 0 auto;
-}
-.abc #pbImage{
-	position:static !important;
-}
-
-#pbCaption{
-	display:block;
-	background:none !important;
-}
-#pbBottom{
-	position: relative !important;
-	left: 26.1% !important;
-	bottom: 0px !important;
-	width: 100% !important;
-	margin-left: -26% !important;
-	padding: 0px !important;
-	height:80px !important;
-	
-	display: block;
-	background-color: rgba(24,27,34,1);
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#B0000000, EndColorStr=#B0000000);
-}
-#pbCloseBtn{
-	position:absolute !important;
-}
-
-
-
 
 /*----------------------------------------------------
  11. Get in tuch Style
@@ -1023,45 +785,38 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 /*----------------------------------------------------
  12. Footer Style
 ------------------------------------------------------*/
-.footer{
-	background:#00bdbd;
+footer {
+	background: #C5DED7;
+	text-align: center;
 }
 .footer .container{
 	padding:40px 0;
 }
 
-.footer ul{
+.footer-list li{
 	margin:0 auto;
 	text-align:center;
+	display: inline-block;
 	list-style-type:none;
+	margin-top: 30px;
+	font-size: 1.5em;
+	font-family: "Brandon Grotesque", sans-serif;
+	margin-left: 6px;
+	margin-right: 6px;
+	font-weight: normal;
 }
-.footer ul li{
-	display:inline-block;
-	text-align:center;
-	background:#ffffff;
-	color:#00bdbd;
-	line-height:42px;
-	margin:0 6px;
-	width:42px !important;
-	height:42px !important;
-	
-	-webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-.footer ul li:hover{
-	background:#0a9f9f ;
-}
+
 .footer ul li:hover	a{
 	color:#fff;
 }
 
-.footer ul li a{
-	color:#00bdbd;
-	width:42px !important;
-	height:42px !important;
+.footer-list li a {
+	color: #379ea2;
 }
-.footer ul li a i{
-	line-height:42px !important;
+footer p, footer p a {
+	color: #379ea2;
+	font-size: 0.9em;
+	margin-top: 10px;
 }
 
 
