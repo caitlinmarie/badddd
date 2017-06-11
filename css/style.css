@@ -17,7 +17,12 @@ Caitlinnnnn
 	12. Footer Style
 	13. Responsive style
 		
-		
+	
+	Colors:
+	#369ea2 - bright text
+	#00696d - dark text
+	#545454 - main gray text
+	#e0ebe8 - light blue/green background
 ---------------------------------------------------------------------------------
 /* 1. CSS Reset + fonts
 -------------------------------------------------------------------------------*/
@@ -50,7 +55,6 @@ body {
 	font-family: 'EB Garamond', serif;
 	font-weight: 300;
 	position:relative;
-	background:#000;
 	width:100%;
 	height:100%;
 	overflow: scroll;
@@ -108,7 +112,7 @@ h2{
 	line-height:38px;
 	padding-bottom:0px;
 	margin:0px;
-	color: #379ea2;
+	color: #369ea2;
 }
 h3{
 	font-family: 'Brandon Grotesque', sans-serif;
@@ -236,7 +240,7 @@ nav ul li {
 }
 nav ul li a{
 	/*color: #50434a;*/
-	color: #379ea2;
+	color: #369ea2;
 	text-align: right;
 	padding-left: 20px;
 	font-size: 20px;
@@ -245,7 +249,7 @@ nav ul li a{
 	text-decoration: none;
 }
 nav ul li a:hover, .active-link {
-	color: #005055;
+	color: #00696d;
 	text-decoration: none;
 }
 .banner{
@@ -261,7 +265,7 @@ nav ul li a:hover, .active-link {
 	padding:70px 0 0 0;
 	max-width:960px;
 /*	color: #607471;*/
-	color: #379ea2;
+	color: #369ea2;
 }
 .bannerText h1{
 	font-size: 180%;
@@ -307,8 +311,6 @@ nav ul li a:hover, .active-link {
 */
 .intro-img{
 	position: absolute;
-	width: 250px;
-	margin-top: 120px;
 	height: auto;
 	transition: all 1s ease-in-out;
 }
@@ -318,17 +320,20 @@ nav ul li a:hover, .active-link {
 	margin-left: -400px;
 	margin-top: 50px;
 }*/
-#bear-img {
+#move-img-right {
 	margin-left: -400px;
+	width: 130px;
+	margin-top: 200px;
 }
-#book-img {
-	margin-left: 140px;
+#move-img-left {
+	margin-left: 300px;
+	width: 130px;
+	margin-top: 120px;
 }
 #desk-img{
 	width: 100%;
-	max-width: 800px;
+	max-width: 750px;
 	margin-top: 80px;
-	margin-right: -80px;
 	margin-bottom: 0px !important;
 	transition: all 1s ease-in-out;
 }
@@ -378,10 +383,10 @@ nav ul li a:hover, .active-link {
 	margin-top: 15px;
 	padding:16px 22px;
 	display:inline-block;
-	color: #379ea2;
+	color: #369ea2;
 }
 .bntDownload:hover{
-	background: #379ea2;
+	background: #369ea2;
 	color: #e0ebe8;
 	text-decoration:none;
 }
@@ -414,7 +419,7 @@ nav ul li a:hover, .active-link {
 	color:#474d5d;
 }
 .technical h2{
-	color: #005055;
+	color: #00696d;
 	font-size: 3.8em;
 	font-weight: 400;
 	margin-bottom: 70px;
@@ -425,7 +430,7 @@ nav ul li a:hover, .active-link {
 	padding-bottom: 20px;
 	margin:0px;
 	font-weight: 500;
-	color: #379ea2;
+	color: #369ea2;
 }
 .technical .skillsArea{
 	padding:0px;
@@ -582,7 +587,7 @@ nav ul li a:hover, .active-link {
 }
 
 #i-can-help header h2 {
-	color: #005055;
+	color: #00696d;
 	text-align: center;
 	font-size: 3.8em;
 	font-weight: 400;
@@ -591,7 +596,7 @@ nav ul li a:hover, .active-link {
 #i-can-help h3 {
 	padding-top: 1em;
 	font-size: 2em;
-	color: #379ea2;
+	color: #369ea2;
 }
 #i-can-help p {
 	margin-top: 10px;
@@ -608,7 +613,7 @@ nav ul li a:hover, .active-link {
 	position: relative;
 	background: #e0ebe8;
 	padding: .75em 2em;
-	color: #005055;
+	color: #00696d;
 	text-decoration: none;
 	margin: 1.5em 0 0;
 	border-radius: 3px;
@@ -634,13 +639,27 @@ nav ul li a:hover, .active-link {
 }
 
 .main-btn:hover {
-	background-color: #005055;
+	background-color: #00696d;
 	color: #e0ebe8;
 }
 /*----------------------------------------------------
- 10. Protfolio Style
+ 10. Portfolio Style
 ------------------------------------------------------*/
 
+.work-head {
+	text-align: center;
+	margin: 0 auto;
+}	
+.work-text {
+	margin-top: 80px;
+}
+.work-img{
+	position: absolute;
+	width: 130px;
+	margin-top: 120px;
+	height: auto;
+	transition: all 1s ease-in-out;
+}
 /*----------------------------------------------------
  11. Get in tuch Style
 ------------------------------------------------------*/
@@ -654,7 +673,7 @@ nav ul li a:hover, .active-link {
 }
 
 .contact h2{
-	color:#379ea2;
+	color:#369ea2;
 }
 .contact p{
 	color:#84868d;
@@ -746,7 +765,7 @@ nav ul li a:hover, .active-link {
 
 
 .conForm .submitBnt{
-	background:#379ea2;
+	background:#369ea2;
 	font-family: 'Open Sans', sans-serif;
 	color:#fff;
 	font-size:16px;
@@ -770,7 +789,7 @@ nav ul li a:hover, .active-link {
 	font-weight: 500;
 }
 .error_message{
-	color: #379ea2;
+	color: #369ea2;
 	padding-bottom: 15px;
 	font-weight: 500;
 }
@@ -806,15 +825,16 @@ footer {
 	font-weight: normal;
 }
 
-.footer ul li:hover	a{
+.footer-list a:hover, footer p a:hover {
 	color:#fff;
+	text-decoration: none;
 }
 
 .footer-list li a {
-	color: #379ea2;
+	color: #369ea2;
 }
 footer p, footer p a {
-	color: #379ea2;
+	color: #369ea2;
 	font-size: 0.9em;
 	margin-top: 10px;
 }
@@ -831,11 +851,12 @@ footer p, footer p a {
 		width: 290px;
 		margin-top: 110px;
 	}
-	#bear-img {
+	#move-img-right {
 		margin-left: -600px;
 	}
-	#book-img {
-		margin-left: 350px;
+	#move-img-left {
+		margin-left: 390px;
+		margin-top: 90px;
 	}
 }
 @media screen and (min-width: 1200px) and (max-width: 1299px) {
@@ -852,11 +873,15 @@ footer p, footer p a {
 		width: 270px;
 		margin-top: 110px;
 	}
-	#bear-img {
+	#move-img-right {
 		margin-left: -540px;
+		transform: rotate(-10deg);
+		margin-top: 190px;
 	}
-	#book-img {
-		margin-left: 290px;
+	#move-img-left {
+		margin-left: 310px;
+		transform: rotate(-10deg);
+		margin-top: 110px;
 	}
 }
 
@@ -866,11 +891,28 @@ footer p, footer p a {
 		width: 250px;
 		margin-top: 110px;
 	}
-	#bear-img {
-		margin-left: -470px;
+	#move-img-right {
+		margin-left: -440px;
+		margin-top: 180px;
+		transform: rotate(-20deg);
 	}
-	#book-img {
+	#move-img-left {
+		margin-left: 280px;
+		transform: rotate(-10deg);
+		margin-top: 120px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1049px) {
+	#move-img-right {
+		margin-left: -390px;
+		margin-top: 160px;
+		transform: rotate(-20deg);
+	}
+	#move-img-left {
 		margin-left: 260px;
+		transform: rotate(-10deg);
+		margin-top: 130px;
 	}
 }
 
@@ -952,11 +994,15 @@ footer p, footer p a {
 		width: 200px;
 		margin-top: 110px;
 	}
-	#bear-img {
+	#move-img-right {
 		margin-left: -300px;
+		margin-top: 120px;
+		transform: rotate(-20deg);
 	}
-	#book-img {
-		margin-left: 120px;
+	#move-img-left {
+		margin-left: 150px;
+		transform: rotate(-20deg);
+		margin-top: 130px;
 	}
 	#cait-svg-wrapper {
 		max-width: 240px;
@@ -1019,11 +1065,19 @@ footer p, footer p a {
 		width: 190px;
 		margin-top: 100px;
 	}
-	#bear-img {
-		margin-left: -290px;
+	#move-img-right {
+		margin-left: -260px;
+		margin-top: 130px;
+		transform: rotate(-10deg);
+		width: 110px;
+		height: auto;
 	}
-	#book-img {
-		margin-left: 100px;
+	#move-img-left {
+		margin-left: 140px;
+		transform: rotate(-10deg);
+		margin-top: 130px;
+		width: 110px;
+		height: auto;
 	}
 }
 
@@ -1033,11 +1087,18 @@ footer p, footer p a {
 		width: 150px;
 		margin-top: 140px;
 	}
-	#bear-img {
+	#move-img-right {
 		margin-left: -210px;
+		width: 100px;
+		transform: rotate(-10deg);
+		margin-top: 120px;
 	}
-	#book-img {
-		margin-left: 70px;
+	#move-img-left {
+		margin-left: 100px;
+		width: 100px;
+		margin-top: 130px;
+		transform: rotate(-10deg);
+		width: 110px;
 	}
 }
 
@@ -1051,14 +1112,14 @@ footer p, footer p a {
 		width: 150px;
 		margin-top: 130px;
 	}
-	#bear-img {
+	#move-img-right {
 		margin-left: -210px;
 	}
-	#book-img {
-		margin-left: 70px;
+	#move-img-left {
+		margin-left: 90px;
 	}
 	#desk-img {
-		margin-right: -60px;
+		margin-top: 60px;
 	}
 }
 
@@ -1111,14 +1172,17 @@ footer p, footer p a {
 		width: 130px;
 		margin-top: 145px;
 	}
-	#bear-img {
-		margin-left: -160px;
+	#move-img-right {
+		margin-left: -180px;
+		width: 80px;
+		margin-top: 130px;
 	}
-	#book-img {
-		margin-left: 40px;
+	#move-img-left {
+		margin-left: 60px;
+		width: 80px;
+		transform: rotate(-10deg);
 	}
 	#desk-img {
-		margin-right: -60px;
 	}
 }
 
@@ -1127,14 +1191,13 @@ footer p, footer p a {
 		width: 100px;
 		margin-top: 150px;
 	}
-	#bear-img {
-		margin-left: -120px;
+	#move-img-right {
+		margin-left: -160px;
 	}
-	#book-img {
-		margin-left: 30px;
+	#move-img-left {
+		margin-left: 50px;
 	}
 	#desk-img {
-		margin-right: -40px;
 	}
 	nav ul li a {
 		padding-left: 5px;
